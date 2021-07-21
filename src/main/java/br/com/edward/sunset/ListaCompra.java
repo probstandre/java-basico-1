@@ -1,3 +1,5 @@
+package br.com.edward.sunset;
+
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
