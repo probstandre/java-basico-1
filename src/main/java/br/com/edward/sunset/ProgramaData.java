@@ -7,9 +7,14 @@ public class ProgramaData {
 
 	public static void main(String[] args) {
 		LocalDate hoje = LocalDate.now();
-		LocalDate niver = LocalDate.parse("2005-06-01", DateTimeFormatter.ISO_LOCAL_DATE);
-		niver = niver.plusDays(52);
-		System.out.println("Hoje é: " + hoje.format(DateTimeFormatter.ISO_LOCAL_DATE));
-		System.out.println("Niver é: " + niver.format(DateTimeFormatter.ISO_LOCAL_DATE));
+		LocalDate niver = LocalDate.parse("2023-07-20", DateTimeFormatter.ISO_LOCAL_DATE);
+		
+		Integer dias = 0;
+		while (niver.isBefore(hoje)) {
+			dias++;
+			niver = niver.plusDays(1); // viajantes do futuro
+		}
+	
+		System.out.println("Voce viveu " + dias + " dias"); // arrumar o s
 	}
 }
