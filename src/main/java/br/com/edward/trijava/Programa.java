@@ -1,3 +1,5 @@
+package br.com.edward.trijava;
+
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -5,8 +7,8 @@ import java.util.Objects;
 
 public class Programa {
     // [[ytftyfty][tftft][ygygy]]
-    public static void main(String[] args_) {
-        String[] args = { "add", "monitor", "1kg de farinha", "batata" };
+    public static void main(String[] args) {
+    	
         System.out.println("Ligou");
         if (Objects.nonNull(args) && args.length > 0) {
             if ("soma".equals(args[0])) {
